@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
+    color: #fff;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  #navbar li {
+    margin: 0 15px;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  #welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+  }
+  
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 0;
+    background: bisque;
+  }
+
+  .project-card {
+    width: calc(33.33% - 40px); /* Para que haya tres tarjetas por fila */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .project-tile {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .project-tile h2 {
+    margin-bottom: 10px;
+  }
+  
+  .project-tile a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #navbar ul {
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      display: none;
+    }
+  
+    #navbar.show {
+      display: block;
+    }
+  
+    #navbar li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  
